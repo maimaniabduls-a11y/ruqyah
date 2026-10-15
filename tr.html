@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14392f">
+<meta name="description" content="Müftü Cüneyd’in sesinden şer’î rukye dinleyin. Ücretsiz ve doğrudan dinleme.">
+<meta property="og:title" content="Şer’î Rukye | Müftü Cüneyd">
+<meta property="og:description" content="Müftü Cüneyd’in sesinden şer’î rukye dinleyin.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<title>Şer’î Rukye | Müftü Cüneyd</title>
+</head>
+<body>
+<div class="skyline" aria-hidden="true"></div>
+<main class="container">
+ <header class="masthead"><nav class="languages" aria-label="Language"><a href="index.html" lang="ar" dir="rtl">العربية</a><a href="ur.html" lang="ur" dir="rtl">اردو</a><a href="en.html" lang="en" dir="ltr">English</a><a href="hi.html" lang="hi" dir="ltr">हिन्दी</a><a href="sd.html" lang="sd" dir="rtl">سنڌي</a><a href="id.html" lang="id" dir="ltr">Bahasa Indonesia</a><a href="tr.html" lang="tr" dir="ltr">Türkçe</a><a href="bn.html" lang="bn" dir="ltr">বাংলা</a></nav>
+  <div class="seal"><img src="icon-192.png" alt="Rukye logosu" width="74" height="74"></div>
+  <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <h1>Şer’î Rukye</h1>
+  <p class="sheikh">Seslendiren<br><strong>Müftü Cüneyd</strong></p>
+ </header>
+ <section class="player" aria-label="Rukye ses oynatıcısı">
+  <p class="rec-label"><span class="dot" aria-hidden="true"></span> Tam ses kaydı</p>
+  <div class="disk" aria-hidden="true"><svg viewBox="0 0 100 100" width="76" height="76"><path d="M22 34Q37 25 49 34V78Q37 70 22 78Z M78 34Q63 25 51 34V78Q63 70 78 78Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M30 44L43 41M30 53L43 50M57 41L70 44M57 50L70 53" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+  <p class="track">Şer’î Rukye</p>
+  <p class="track-sub">Yaklaşık 46 dakika dinleme</p>
+  <audio id="audio" src="ruqyah.mp3" preload="metadata" playsinline></audio>
+  <div class="timeline">
+    <input id="seek" type="range" min="0" max="1000" step="1" value="0" aria-label="Oynatma konumu">
+    <div class="times"><span id="remaining">−46:26</span><span id="elapsed">00:00</span></div>
+  </div>
+  <div class="controls">
+   <button type="button" id="repeat" class="icon-btn" aria-pressed="false" aria-label="Kaydı tekrarla" title="Kaydı tekrarla"><svg viewBox="0 0 24 24" width="23" height="23"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/></svg></button>
+   <button type="button" id="forward" class="icon-btn" aria-label="On saniye ileri" title="10 saniye ileri"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 8a8 8 0 1 1-5-3M18 2v6h-6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="play" class="play-btn" aria-label="Oynat"><svg id="play-icon" viewBox="0 0 24 24" width="27" height="27"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></button>
+   <button type="button" id="back" class="icon-btn" aria-label="On saniye geri" title="10 saniye geri"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 8a8 8 0 1 0 5-3M6 2v6h6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="speed" class="icon-btn speed" aria-label="Oynatma hızı" title="Oynatma hızı">1×</button>
+  </div>
+  <div id="status" class="status" role="status" aria-live="polite">Rukye dinlemek için oynat düğmesine basın</div>
+  <div class="actions">
+   <a class="action" href="ruqyah.mp3" download="ruqyah-mufti-junaid.mp3"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg> Kaydı indir</a>
+   <button class="action" type="button" id="share"><svg viewBox="0 0 24 24"><path d="M12 15V3m-5 5 5-5 5 5M4 14v7h16v-7"/></svg> Sayfayı paylaş</button>
+  </div>
+ </section>
+ <section class="sheikh-text" aria-label="Eşlik eden metin"><p>Hamd, âlemlerin Rabbi Allah’a mahsustur. Peygamberlerin ve elçilerin sonuncusu Efendimiz Muhammed’e, ailesine ve bütün sahabilerine salât ve selâm olsun.</p><p>Bundan sonra:</p><p>Bu, Müftü Cüneyd’in sesinden şer’î rukyedir. Sihri, nazarı ve hasedi gidermek için faydalı ve denenmiştir; ayrıca kişiden, evden veya bulunduğunuz herhangi bir yerden şeytanları ve cinleri uzaklaştırmak için çok faydalıdır.</p><p>Sihir, cin etkisi veya nazara maruz kalıp kalmadığınızı anlama yolu:</p><p>Dinç olduğunuz bir zamanda bu şer’î rukyeyi yalnızca on beş dakika dinleyin. Şu belirtileri hissedip hissetmediğinize ve bunların ortaya çıkıp çıkmadığına bakın.</p><p>Cevap evet ise etkilenmişsinizdir ve kendinizi bu rukye ile tedavi etmelisiniz. Hiçbir belirti ortaya çıkmazsa bu, hastalığınızın ruhani değil tıbbi olduğu anlamına gelir.</p><p>Belirtiler şunlardır:</p><p>Omuzlarda ağırlık, başta şişlik, tekrarlayan esneme, aniden uykuya dalmayla birlikte uyuklama, kusma isteği, ağrıyan yerde ağrının artması, ishal, geğirme, rukye dinlemekten hoşlanmama, bağırma isteği veya rukye sesinden kaçma isteği.</p><p>Bu belirtilerden biri veya birkaçı ortaya çıkarsa kendinizi bu şer’î rukye ile tedavi etmelisiniz.</p><p>Uygulama şekli:</p><p>1. Abdest alın ve dinç olduğunuz bir zamanda oturun.</p><p>2. Bu şer’î rukyeyi 24 saatte iki kez dinleyin.</p><p>3. Gafletle değil, dikkatle dinleyin.</p><p>4. Başka bir işle meşgulken dinlemeyin.</p><p>5. Dinlerken sabırlı ve kararlı olun.</p><p>6. Hissettiğiniz her türlü rahatsızlık gerçekte şeytanlardandır; bu yüzden okumayı kesmeyin.</p><p>7. Zaferin sabır gerektirdiğini hatırlayın.</p><p>8. Şifa verenin yalnızca yüce Allah olduğuna kesin olarak inanın.</p><p>9. Tedaviyi sürdürmek, tedavinin kendisidir.</p><p>10. Hastayı hacet namazı, dua ve sadakalarla tedavi edin.</p></section>
+ <footer><span>Ücretsiz dinleme</span><span class="sep" aria-hidden="true">•</span><span>Allah herkese şifa ve afiyet versin</span></footer>
+</main>
+<script src="script-tr.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+

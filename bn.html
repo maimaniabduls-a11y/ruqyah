@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="bn" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14392f">
+<meta name="description" content="মুফতি জুনাইদের কণ্ঠে শরয়ি রুকইয়াহ শুনুন। বিনামূল্যে ও সরাসরি শোনা।">
+<meta property="og:title" content="শরয়ি রুকইয়াহ | মুফতি জুনাইদ">
+<meta property="og:description" content="মুফতি জুনাইদের কণ্ঠে শরয়ি রুকইয়াহ শুনুন।">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<title>শরয়ি রুকইয়াহ | মুফতি জুনাইদ</title>
+</head>
+<body>
+<div class="skyline" aria-hidden="true"></div>
+<main class="container">
+ <header class="masthead"><nav class="languages" aria-label="Language"><a href="index.html" lang="ar" dir="rtl">العربية</a><a href="ur.html" lang="ur" dir="rtl">اردو</a><a href="en.html" lang="en" dir="ltr">English</a><a href="hi.html" lang="hi" dir="ltr">हिन्दी</a><a href="sd.html" lang="sd" dir="rtl">سنڌي</a><a href="id.html" lang="id" dir="ltr">Bahasa Indonesia</a><a href="tr.html" lang="tr" dir="ltr">Türkçe</a><a href="bn.html" lang="bn" dir="ltr">বাংলা</a></nav>
+  <div class="seal"><img src="icon-192.png" alt="রুকইয়াহর প্রতীক" width="74" height="74"></div>
+  <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <h1>শরয়ি রুকইয়াহ</h1>
+  <p class="sheikh">কণ্ঠে<br><strong>মুফতি জুনাইদ</strong></p>
+ </header>
+ <section class="player" aria-label="রুকইয়াহ অডিও প্লেয়ার">
+  <p class="rec-label"><span class="dot" aria-hidden="true"></span> সম্পূর্ণ অডিও রেকর্ডিং</p>
+  <div class="disk" aria-hidden="true"><svg viewBox="0 0 100 100" width="76" height="76"><path d="M22 34Q37 25 49 34V78Q37 70 22 78Z M78 34Q63 25 51 34V78Q63 70 78 78Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M30 44L43 41M30 53L43 50M57 41L70 44M57 50L70 53" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+  <p class="track">শরয়ি রুকইয়াহ</p>
+  <p class="track-sub">প্রায় ৪৬ মিনিট শোনা</p>
+  <audio id="audio" src="ruqyah.mp3" preload="metadata" playsinline></audio>
+  <div class="timeline">
+    <input id="seek" type="range" min="0" max="1000" step="1" value="0" aria-label="প্লেব্যাকের অবস্থান">
+    <div class="times"><span id="remaining">−46:26</span><span id="elapsed">00:00</span></div>
+  </div>
+  <div class="controls">
+   <button type="button" id="repeat" class="icon-btn" aria-pressed="false" aria-label="রেকর্ডিং পুনরাবৃত্তি করুন" title="রেকর্ডিং পুনরাবৃত্তি করুন"><svg viewBox="0 0 24 24" width="23" height="23"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/></svg></button>
+   <button type="button" id="forward" class="icon-btn" aria-label="দশ সেকেন্ড এগিয়ে" title="১০ সেকেন্ড এগিয়ে"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 8a8 8 0 1 1-5-3M18 2v6h-6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="play" class="play-btn" aria-label="চালু করুন"><svg id="play-icon" viewBox="0 0 24 24" width="27" height="27"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></button>
+   <button type="button" id="back" class="icon-btn" aria-label="দশ সেকেন্ড পিছিয়ে" title="১০ সেকেন্ড পিছিয়ে"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 8a8 8 0 1 0 5-3M6 2v6h6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="speed" class="icon-btn speed" aria-label="চালানোর গতি" title="চালানোর গতি">1×</button>
+  </div>
+  <div id="status" class="status" role="status" aria-live="polite">রুকইয়াহ শুনতে চালু করুন চাপুন</div>
+  <div class="actions">
+   <a class="action" href="ruqyah.mp3" download="ruqyah-mufti-junaid.mp3"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg> রেকর্ডিং সংরক্ষণ করুন</a>
+   <button class="action" type="button" id="share"><svg viewBox="0 0 24 24"><path d="M12 15V3m-5 5 5-5 5 5M4 14v7h16v-7"/></svg> পাতা শেয়ার করুন</button>
+  </div>
+ </section>
+ <section class="sheikh-text" aria-label="সহায়ক পাঠ"><p>সমস্ত প্রশংসা আল্লাহর জন্য, যিনি সকল জগতের প্রতিপালক। সর্বশেষ নবী ও রাসুল, আমাদের নেতা মুহাম্মদ, তাঁর পরিবার এবং সকল সাহাবির প্রতি দরুদ ও সালাম বর্ষিত হোক।</p><p>অতঃপর:</p><p>এটি মুফতি জুনাইদের কণ্ঠে শরয়ি রুকইয়াহ। জাদু, বদনজর ও হিংসা দূর করতে এটি উপকারী ও পরীক্ষিত; কোনো ব্যক্তি, বাড়ি বা আপনার অবস্থানরত যেকোনো স্থান থেকে শয়তান ও জিন তাড়াতেও এটি খুব উপকারী।</p><p>আপনি জাদু, জিনের প্রভাব বা বদনজরে আক্রান্ত কি না বোঝার উপায়:</p><p>আপনি যখন সতেজ থাকবেন, তখন মাত্র পনেরো মিনিট এই শরয়ি রুকইয়াহ শুনুন। লক্ষ করুন, এই লক্ষণগুলো অনুভব করছেন কি না এবং সেগুলো দেখা দিচ্ছে কি না।</p><p>উত্তর হ্যাঁ হলে আপনি আক্রান্ত এবং এই রুকইয়াহ দিয়ে নিজের চিকিৎসা করা উচিত। কোনো লক্ষণ দেখা না দিলে এর অর্থ, আপনার অসুস্থতা চিকিৎসাবিষয়ক, আধ্যাত্মিক নয়।</p><p>লক্ষণগুলো হলো:</p><p>কাঁধে ভার, মাথা ফুলে যাওয়া, বারবার হাই তোলা, হঠাৎ ঘুমিয়ে পড়াসহ তন্দ্রা, বমির ইচ্ছা, ব্যথার স্থানে ব্যথা বেড়ে যাওয়া, ডায়রিয়া, ঢেকুর, রুকইয়াহ শুনতে অনীহা, চিৎকার করার ইচ্ছা বা রুকইয়াহ শোনা থেকে পালাতে চাওয়া।</p><p>এই লক্ষণগুলোর একটি বা একাধিক দেখা দিলে এই শরয়ি রুকইয়াহ দিয়ে নিজের চিকিৎসা করা উচিত।</p><p>ব্যবহারের পদ্ধতি:</p><p>১. অজু করুন এবং সতেজ থাকার সময় বসুন।</p><p>২. চব্বিশ ঘণ্টায় দুইবার এই শরয়ি রুকইয়াহ শুনুন।</p><p>৩. মনোযোগ দিয়ে শুনুন, অমনোযোগী হয়ে নয়।</p><p>৪. অন্য কাজে ব্যস্ত থাকা অবস্থায় শুনবেন না।</p><p>৫. শোনার সময় ধৈর্য ও দৃঢ়তা বজায় রাখুন।</p><p>৬. যে কষ্টই অনুভব করুন, তা আসলে শয়তানদের পক্ষ থেকে; তাই তিলাওয়াত বন্ধ করবেন না।</p><p>৭. মনে রাখুন, বিজয়ের জন্য ধৈর্য প্রয়োজন।</p><p>৮. দৃঢ় বিশ্বাস রাখুন যে একমাত্র মহান আল্লাহই আরোগ্য দান করেন।</p><p>৯. চিকিৎসা চালিয়ে যাওয়াই চিকিৎসা।</p><p>১০. হাজতের নামাজ, দোয়া ও সদকার মাধ্যমে রোগীর চিকিৎসা করুন।</p></section>
+ <footer><span>বিনামূল্যে শোনা</span><span class="sep" aria-hidden="true">•</span><span>আল্লাহ সবাইকে আরোগ্য ও সুস্থতা দিন</span></footer>
+</main>
+<script src="script-bn.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+

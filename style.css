@@ -4,3 +4,6 @@
 
 .languages{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 0 20px}.languages a{color:#fff5dc;border:1px solid #ac9871;border-radius:8px;padding:4px 12px;text-decoration:none;font-size:14px}.languages a:hover{background:#416c5a}html[lang=en] .sheikh-text{text-align:left}html[lang=ur] .sheikh-text{line-height:2.2}
 .skyline{height:430px}
+
+/* Keep the masthead background behind all language choices. */
+.skyline{display:none}.masthead{background:radial-gradient(ellipse at 40% -10%,#416c5a 0%,#1d4b3b 55%,#103329 100%);box-shadow:0 0 0 100vmax #1d4b3b;clip-path:inset(0 -100vmax);margin-bottom:18px}.languages{gap:8px}.languages a{font-family:Tahoma,Arial,sans-serif;font-size:13px}.sheikh-text{text-align:start}html[lang=sd] .sheikh-text{line-height:2.2}

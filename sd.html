@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="sd" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14392f">
+<meta name="description" content="مفتي جنيد جي آواز ۾ شرعي رقيه ٻڌو. مفت ۽ سڌي سماعت.">
+<meta property="og:title" content="شرعي رقيه | مفتي جنيد">
+<meta property="og:description" content="مفتي جنيد جي آواز ۾ شرعي رقيه ٻڌو.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<title>شرعي رقيه | مفتي جنيد</title>
+</head>
+<body>
+<div class="skyline" aria-hidden="true"></div>
+<main class="container">
+ <header class="masthead"><nav class="languages" aria-label="Language"><a href="index.html" lang="ar" dir="rtl">العربية</a><a href="ur.html" lang="ur" dir="rtl">اردو</a><a href="en.html" lang="en" dir="ltr">English</a><a href="hi.html" lang="hi" dir="ltr">हिन्दी</a><a href="sd.html" lang="sd" dir="rtl">سنڌي</a><a href="id.html" lang="id" dir="ltr">Bahasa Indonesia</a><a href="tr.html" lang="tr" dir="ltr">Türkçe</a><a href="bn.html" lang="bn" dir="ltr">বাংলা</a></nav>
+  <div class="seal"><img src="icon-192.png" alt="رقيه جو نشان" width="74" height="74"></div>
+  <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <h1>شرعي رقيه</h1>
+  <p class="sheikh">آواز ۾<br><strong>مفتي جنيد</strong></p>
+ </header>
+ <section class="player" aria-label="رقيه آڊيو پليئر">
+  <p class="rec-label"><span class="dot" aria-hidden="true"></span> مڪمل آواز جي رڪارڊنگ</p>
+  <div class="disk" aria-hidden="true"><svg viewBox="0 0 100 100" width="76" height="76"><path d="M22 34Q37 25 49 34V78Q37 70 22 78Z M78 34Q63 25 51 34V78Q63 70 78 78Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M30 44L43 41M30 53L43 50M57 41L70 44M57 50L70 53" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+  <p class="track">شرعي رقيه</p>
+  <p class="track-sub">تقريباً ۴۶ منٽن جي سماعت</p>
+  <audio id="audio" src="ruqyah.mp3" preload="metadata" playsinline></audio>
+  <div class="timeline">
+    <input id="seek" type="range" min="0" max="1000" step="1" value="0" aria-label="هلڻ جي جاءِ">
+    <div class="times"><span id="remaining">−46:26</span><span id="elapsed">00:00</span></div>
+  </div>
+  <div class="controls">
+   <button type="button" id="repeat" class="icon-btn" aria-pressed="false" aria-label="رڪارڊنگ ورجايو" title="رڪارڊنگ ورجايو"><svg viewBox="0 0 24 24" width="23" height="23"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/></svg></button>
+   <button type="button" id="forward" class="icon-btn" aria-label="ڏهه سيڪنڊ اڳتي" title="۱۰ سيڪنڊ اڳتي"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 8a8 8 0 1 1-5-3M18 2v6h-6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="play" class="play-btn" aria-label="هلايو"><svg id="play-icon" viewBox="0 0 24 24" width="27" height="27"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></button>
+   <button type="button" id="back" class="icon-btn" aria-label="ڏهه سيڪنڊ پوئتي" title="۱۰ سيڪنڊ پوئتي"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 8a8 8 0 1 0 5-3M6 2v6h6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="speed" class="icon-btn speed" aria-label="هلائڻ جي رفتار" title="هلائڻ جي رفتار">1×</button>
+  </div>
+  <div id="status" class="status" role="status" aria-live="polite">رقيه ٻڌڻ لاءِ هلايو دٻايو</div>
+  <div class="actions">
+   <a class="action" href="ruqyah.mp3" download="ruqyah-mufti-junaid.mp3"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg> رڪارڊنگ محفوظ ڪريو</a>
+   <button class="action" type="button" id="share"><svg viewBox="0 0 24 24"><path d="M12 15V3m-5 5 5-5 5 5M4 14v7h16v-7"/></svg> صفحو ونڊيو</button>
+  </div>
+ </section>
+ <section class="sheikh-text" aria-label="گڏ ڏنل متن"><p>سڀ ساراهون الله لاءِ آهن، جيڪو سڀني جهانن جو پالڻهار آهي. درود ۽ سلام هجن نبين ۽ رسولن جي آخري نبي، اسان جي سردار محمد، سندس آل ۽ سڀني صحابين تي.</p><p>اما بعد:</p><p>هي مفتي جنيد جي آواز ۾ شرعي رقيه آهي. هي جادو، نظر بد ۽ حسد ختم ڪرڻ لاءِ مفيد ۽ آزمايل آهي، ۽ ڪنهن شخص، گهر يا ڪنهن به هنڌ تان شيطانن ۽ جنن کي ڀڄائڻ لاءِ تمام مفيد آهي.</p><p>اهو ڄاڻڻ جو طريقو ته توهان تي جادو، جنن جو اثر يا نظر بد آهي:</p><p>جڏهن توهان چست هجو، تڏهن هي شرعي رقيه رڳو پندرهن منٽ ٻڌو ۽ ڏسو ته ڇا اهي علامتون محسوس ٿين ٿيون يا ظاهر ٿين ٿيون؟</p><p>جيڪڏهن جواب ها آهي ته توهان متاثر آهيو ۽ توهان کي هن شرعي رقيه سان پنهنجو علاج ڪرڻ گهرجي. جيڪڏهن ڪا به علامت ظاهر نه ٿئي ته ان جو مطلب آهي ته توهان جي بيماري طبي آهي، روحاني نه آهي.</p><p>علامتون هي آهن:</p><p>ڪلهن تي ڳراڻ، مٿي ۾ سوڄ، بار بار اوٻاسيون، اوچتي ننڊ سان اونگه، الٽي ڪرڻ جي خواهش، سور واري هنڌ سور وڌڻ، دست، اوڳرايون، رقيه ٻڌڻ کان نفرت، رڙ ڪرڻ جي خواهش يا رقيه ٻڌڻ کان ڀڄڻ.</p><p>جيڪڏهن انهن مان هڪ يا وڌيڪ علامتون ظاهر ٿين ته توهان کي هن شرعي رقيه سان پنهنجو علاج ڪرڻ گهرجي.</p><p>استعمال جو طريقو:</p><p>۱. وضو ڪريو ۽ اهڙي وقت ويهو جڏهن توهان چست هجو.</p><p>۲. هي شرعي رقيه چوويهن ڪلاڪن ۾ ٻه ڀيرا ٻڌو.</p><p>۳. ڌيان سان ٻڌو، غفلت سان نه.</p><p>۴. ڪنهن ٻئي ڪم ۾ مصروف هوندي نه ٻڌو.</p><p>۵. ٻڌڻ وقت صبر ۽ ثابت قدمي اختيار ڪريو.</p><p>۶. جيڪا به تڪليف توهان محسوس ڪريو ٿا، اها حقيقت ۾ شيطانن طرفان آهي، تنهنڪري قراءت نه روڪيو.</p><p>۷. ياد رکو ته فتح صبر سان ملي ٿي.</p><p>۸. يقين رکو ته رڳو الله عزوجل ئي شفا ڏيندڙ آهي.</p><p>۹. علاج جاري رکڻ ئي علاج آهي.</p><p>۱۰. مريض جو علاج حاجت جي نماز، دعا ۽ صدقن ذريعي ڪريو.</p></section>
+ <footer><span>مفت ٻڌڻ</span><span class="sep" aria-hidden="true">•</span><span>الله سڀني کي شفا ۽ عافيت عطا فرمائي</span></footer>
+</main>
+<script src="script-sd.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+

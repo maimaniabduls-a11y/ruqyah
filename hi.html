@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="hi" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14392f">
+<meta name="description" content="मुफ़्ती जुनैद की आवाज़ में शरई रुक़्या सुनें। निःशुल्क और सीधा श्रवण।">
+<meta property="og:title" content="शरई रुक़्या | मुफ़्ती जुनैद">
+<meta property="og:description" content="मुफ़्ती जुनैद की आवाज़ में शरई रुक़्या सुनें।">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<title>शरई रुक़्या | मुफ़्ती जुनैद</title>
+</head>
+<body>
+<div class="skyline" aria-hidden="true"></div>
+<main class="container">
+ <header class="masthead"><nav class="languages" aria-label="Language"><a href="index.html" lang="ar" dir="rtl">العربية</a><a href="ur.html" lang="ur" dir="rtl">اردو</a><a href="en.html" lang="en" dir="ltr">English</a><a href="hi.html" lang="hi" dir="ltr">हिन्दी</a><a href="sd.html" lang="sd" dir="rtl">سنڌي</a><a href="id.html" lang="id" dir="ltr">Bahasa Indonesia</a><a href="tr.html" lang="tr" dir="ltr">Türkçe</a><a href="bn.html" lang="bn" dir="ltr">বাংলা</a></nav>
+  <div class="seal"><img src="icon-192.png" alt="रुक़्या का चिह्न" width="74" height="74"></div>
+  <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <h1>शरई रुक़्या</h1>
+  <p class="sheikh">आवाज़ में<br><strong>मुफ़्ती जुनैद</strong></p>
+ </header>
+ <section class="player" aria-label="रुक़्या ऑडियो प्लेयर">
+  <p class="rec-label"><span class="dot" aria-hidden="true"></span> पूरा ऑडियो रिकॉर्डिंग</p>
+  <div class="disk" aria-hidden="true"><svg viewBox="0 0 100 100" width="76" height="76"><path d="M22 34Q37 25 49 34V78Q37 70 22 78Z M78 34Q63 25 51 34V78Q63 70 78 78Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M30 44L43 41M30 53L43 50M57 41L70 44M57 50L70 53" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+  <p class="track">शरई रुक़्या</p>
+  <p class="track-sub">लगभग ४६ मिनट का श्रवण</p>
+  <audio id="audio" src="ruqyah.mp3" preload="metadata" playsinline></audio>
+  <div class="timeline">
+    <input id="seek" type="range" min="0" max="1000" step="1" value="0" aria-label="प्लेबैक की स्थिति">
+    <div class="times"><span id="remaining">−46:26</span><span id="elapsed">00:00</span></div>
+  </div>
+  <div class="controls">
+   <button type="button" id="repeat" class="icon-btn" aria-pressed="false" aria-label="रिकॉर्डिंग दोहराएँ" title="रिकॉर्डिंग दोहराएँ"><svg viewBox="0 0 24 24" width="23" height="23"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/></svg></button>
+   <button type="button" id="forward" class="icon-btn" aria-label="दस सेकंड आगे" title="१० सेकंड आगे"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 8a8 8 0 1 1-5-3M18 2v6h-6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="play" class="play-btn" aria-label="चलाएँ"><svg id="play-icon" viewBox="0 0 24 24" width="27" height="27"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></button>
+   <button type="button" id="back" class="icon-btn" aria-label="दस सेकंड पीछे" title="१० सेकंड पीछे"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 8a8 8 0 1 0 5-3M6 2v6h6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="speed" class="icon-btn speed" aria-label="चलाने की गति" title="चलाने की गति">1×</button>
+  </div>
+  <div id="status" class="status" role="status" aria-live="polite">रुक़्या सुनने के लिए चलाएँ दबाएँ</div>
+  <div class="actions">
+   <a class="action" href="ruqyah.mp3" download="ruqyah-mufti-junaid.mp3"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg> रिकॉर्डिंग सहेजें</a>
+   <button class="action" type="button" id="share"><svg viewBox="0 0 24 24"><path d="M12 15V3m-5 5 5-5 5 5M4 14v7h16v-7"/></svg> पृष्ठ साझा करें</button>
+  </div>
+ </section>
+ <section class="sheikh-text" aria-label="साथ दिया गया पाठ"><p>सारी प्रशंसा अल्लाह के लिए है, जो सारे संसारों का पालनहार है। आख़िरी नबी और रसूल, हमारे सरदार मुहम्मद, उनके परिवार और सभी साथियों पर दुरूद और सलाम हो।</p><p>इसके बाद:</p><p>यह मुफ़्ती जुनैद की आवाज़ में शरई रुक़्या है। यह जादू, बुरी नज़र और हसद को दूर करने के लिए लाभकारी और आज़माया हुआ है, और किसी व्यक्ति, घर या किसी भी स्थान से शैतानों और जिन्नों को भगाने के लिए बहुत लाभकारी है।</p><p>यह जानने का तरीक़ा कि आप जादू, जिन्न के असर या बुरी नज़र से प्रभावित हैं:</p><p>जब आप चुस्त हों, तब केवल पंद्रह मिनट यह शरई रुक़्या सुनें और देखें कि क्या ये लक्षण महसूस होते या दिखाई देते हैं।</p><p>यदि उत्तर हाँ है, तो आप प्रभावित हैं और आपको इस शरई रुक़्या से अपना इलाज करना चाहिए। यदि कोई लक्षण प्रकट न हो, तो इसका अर्थ है कि आपकी बीमारी चिकित्सकीय है, आध्यात्मिक नहीं।</p><p>लक्षण ये हैं:</p><p>कंधों पर भारीपन, सिर में सूजन, बार-बार जम्हाई, अचानक नींद के साथ ऊँघना, उल्टी की इच्छा, दर्द वाली जगह पर दर्द बढ़ना, दस्त, डकार, रुक़्या सुनने से अरुचि, चीखने की इच्छा या रुक़्या सुनने से भागना।</p><p>यदि इनमें से एक या अधिक लक्षण दिखाई दें, तो आपको इस शरई रुक़्या से अपना इलाज करना चाहिए।</p><p>इस्तेमाल का तरीक़ा:</p><p>१. वुज़ू करें और ऐसे समय बैठें जब आप चुस्त हों।</p><p>२. चौबीस घंटों में दो बार यह शरई रुक़्या सुनें।</p><p>३. ध्यान से सुनें, लापरवाही से नहीं।</p><p>४. किसी दूसरे काम में व्यस्त रहते हुए न सुनें।</p><p>५. सुनते समय धैर्य और दृढ़ता रखें।</p><p>६. जो भी तकलीफ़ महसूस हो, वह वास्तव में शैतानों की ओर से है, इसलिए पाठ को न रोकें।</p><p>७. याद रखें कि जीत धैर्य से मिलती है।</p><p>८. यक़ीन रखें कि केवल अल्लाह ही शिफ़ा देने वाला है।</p><p>९. इलाज जारी रखना ही इलाज है।</p><p>१०. नमाज़-ए-हाजत, दुआ और सदक़े के ज़रिए बीमार का इलाज करें।</p></section>
+ <footer><span>निःशुल्क श्रवण</span><span class="sep" aria-hidden="true">•</span><span>अल्लाह सभी को शिफ़ा और सलामती दे</span></footer>
+</main>
+<script src="script-hi.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
