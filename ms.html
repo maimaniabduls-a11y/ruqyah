@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ms" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14392f">
+<meta name="description" content="Dengarkan ruqyah syar’iyyah oleh Mufti Junaid. Percuma dan terus.">
+<meta property="og:title" content="Ruqyah Syar’iyyah | Mufti Junaid">
+<meta property="og:description" content="Dengarkan ruqyah syar’iyyah oleh Mufti Junaid.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<title>Ruqyah Syar’iyyah | Mufti Junaid</title>
+</head>
+<body>
+<div class="skyline" aria-hidden="true"></div>
+<main class="container">
+ <header class="masthead"><nav class="languages" aria-label="Language"><a href="index.html" lang="ar" dir="rtl">العربية</a><a href="ur.html" lang="ur" dir="rtl">اردو</a><a href="en.html" lang="en" dir="ltr">English</a><a href="hi.html" lang="hi" dir="ltr">हिन्दी</a><a href="sd.html" lang="sd" dir="rtl">سنڌي</a><a href="id.html" lang="id" dir="ltr">Bahasa Indonesia</a><a href="tr.html" lang="tr" dir="ltr">Türkçe</a><a href="bn.html" lang="bn" dir="ltr">বাংলা</a><a href="fa.html" lang="fa" dir="rtl">فارسی</a><a href="ms.html" lang="ms" dir="ltr">Bahasa Melayu</a><a href="fr.html" lang="fr" dir="ltr">Français</a><a href="sw.html" lang="sw" dir="ltr">Kiswahili</a><a href="ha.html" lang="ha" dir="ltr">Hausa</a></nav>
+  <div class="seal"><img src="icon-192.png" alt="Logo ruqyah" width="74" height="74"></div>
+  <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <h1>Ruqyah Syar’iyyah</h1>
+  <p class="sheikh">Bacaan oleh<br><strong>Mufti Junaid</strong></p>
+ </header>
+ <section class="player" aria-label="Pemain audio ruqyah">
+  <p class="rec-label"><span class="dot" aria-hidden="true"></span> Rakaman audio penuh</p>
+  <div class="disk" aria-hidden="true"><svg viewBox="0 0 100 100" width="76" height="76"><path d="M22 34Q37 25 49 34V78Q37 70 22 78Z M78 34Q63 25 51 34V78Q63 70 78 78Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M30 44L43 41M30 53L43 50M57 41L70 44M57 50L70 53" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+  <p class="track">Ruqyah Syar’iyyah</p>
+  <p class="track-sub">Kira-kira 46 minit mendengar</p>
+  <audio id="audio" src="ruqyah.mp3" preload="metadata" playsinline></audio>
+  <div class="timeline">
+    <input id="seek" type="range" min="0" max="1000" step="1" value="0" aria-label="Kedudukan main balik">
+    <div class="times"><span id="remaining">−46:26</span><span id="elapsed">00:00</span></div>
+  </div>
+  <div class="controls">
+   <button type="button" id="repeat" class="icon-btn" aria-pressed="false" aria-label="Ulang rakaman" title="Ulang rakaman"><svg viewBox="0 0 24 24" width="23" height="23"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/></svg></button>
+   <button type="button" id="forward" class="icon-btn" aria-label="Maju sepuluh saat" title="Maju 10 saat"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 8a8 8 0 1 1-5-3M18 2v6h-6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="play" class="play-btn" aria-label="Main"><svg id="play-icon" viewBox="0 0 24 24" width="27" height="27"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></button>
+   <button type="button" id="back" class="icon-btn" aria-label="Undur sepuluh saat" title="Undur 10 saat"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 8a8 8 0 1 0 5-3M6 2v6h6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="speed" class="icon-btn speed" aria-label="Kelajuan main balik" title="Kelajuan main balik">1×</button>
+  </div>
+  <div id="status" class="status" role="status" aria-live="polite">Tekan main untuk mendengar ruqyah</div>
+  <div class="actions">
+   <a class="action" href="ruqyah.mp3" download="ruqyah-mufti-junaid.mp3"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg> Simpan rakaman</a>
+   <button class="action" type="button" id="share"><svg viewBox="0 0 24 24"><path d="M12 15V3m-5 5 5-5 5 5M4 14v7h16v-7"/></svg> Kongsi halaman</button>
+  </div>
+ </section>
+ <section class="sheikh-text" aria-label="Teks iringan"><p>Segala puji bagi Allah, Tuhan sekalian alam. Selawat dan salam ke atas penutup para nabi dan rasul, junjungan kita Muhammad, ahli keluarga dan seluruh sahabat baginda.</p><p>Amma ba’du:</p><p>Ini ialah ruqyah syar’iyyah dengan bacaan Mufti Junaid. Ia bermanfaat dan telah dicuba untuk membatalkan sihir, penyakit ain dan hasad, serta sangat bermanfaat untuk mengusir syaitan dan jin daripada seseorang, rumah atau mana-mana tempat anda berada.</p><p>Cara mengetahui sama ada anda terkena sihir, gangguan jin atau ain:</p><p>Dengarkan ruqyah ini selama lima belas minit sahaja ketika anda cergas. Perhatikan sama ada anda merasakan tanda-tanda ini dan sama ada ia muncul.</p><p>Jika jawapannya ya, anda terjejas dan hendaklah merawat diri dengan ruqyah ini. Jika tiada tanda muncul, ini bermakna penyakit anda bersifat perubatan, bukan kerohanian.</p><p>Tanda-tandanya ialah:</p><p>Rasa berat pada bahu, kepala bengkak, menguap berulang kali, mengantuk lalu tertidur secara tiba-tiba, rasa hendak muntah, kesakitan bertambah pada tempat yang sakit, cirit-birit, sendawa, tidak suka mendengar ruqyah, ingin menjerit atau ingin menjauh daripada mendengar ruqyah.</p><p>Jika satu atau lebih tanda ini muncul, hendaklah anda merawat diri dengan ruqyah syar’iyyah ini.</p><p>Cara penggunaannya:</p><p>1. Berwuduk dan duduk pada waktu anda cergas.</p><p>2. Dengarkan ruqyah ini dua kali dalam 24 jam.</p><p>3. Dengar dengan penuh perhatian, bukan dalam kelalaian.</p><p>4. Jangan dengar ketika sibuk melakukan kerja lain.</p><p>5. Bersabar dan teguhkan diri semasa mendengar.</p><p>6. Apa-apa gangguan yang anda rasakan sebenarnya daripada syaitan, maka jangan hentikan bacaan.</p><p>7. Ingatlah bahawa kemenangan memerlukan kesabaran.</p><p>8. Yakinlah bahawa hanya Allah Yang Maha Mulia lagi Maha Agung yang menyembuhkan.</p><p>9. Meneruskan rawatan ialah rawatan itu sendiri.</p><p>10. Rawatlah pesakit dengan solat hajat, doa dan sedekah.</p></section>
+ <footer><span>Percuma untuk didengar</span><span class="sep" aria-hidden="true">•</span><span>Semoga Allah mengurniakan kesembuhan dan kesejahteraan kepada semua</span></footer>
+</main>
+<script src="script-ms.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+

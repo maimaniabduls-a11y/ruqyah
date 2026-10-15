@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="sw" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14392f">
+<meta name="description" content="Sikiliza ruqyah ya kisharia kwa sauti ya Mufti Junaid. Bure na moja kwa moja.">
+<meta property="og:title" content="Ruqyah ya Kisharia | Mufti Junaid">
+<meta property="og:description" content="Sikiliza ruqyah ya kisharia kwa sauti ya Mufti Junaid.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<title>Ruqyah ya Kisharia | Mufti Junaid</title>
+</head>
+<body>
+<div class="skyline" aria-hidden="true"></div>
+<main class="container">
+ <header class="masthead"><nav class="languages" aria-label="Language"><a href="index.html" lang="ar" dir="rtl">العربية</a><a href="ur.html" lang="ur" dir="rtl">اردو</a><a href="en.html" lang="en" dir="ltr">English</a><a href="hi.html" lang="hi" dir="ltr">हिन्दी</a><a href="sd.html" lang="sd" dir="rtl">سنڌي</a><a href="id.html" lang="id" dir="ltr">Bahasa Indonesia</a><a href="tr.html" lang="tr" dir="ltr">Türkçe</a><a href="bn.html" lang="bn" dir="ltr">বাংলা</a><a href="fa.html" lang="fa" dir="rtl">فارسی</a><a href="ms.html" lang="ms" dir="ltr">Bahasa Melayu</a><a href="fr.html" lang="fr" dir="ltr">Français</a><a href="sw.html" lang="sw" dir="ltr">Kiswahili</a><a href="ha.html" lang="ha" dir="ltr">Hausa</a></nav>
+  <div class="seal"><img src="icon-192.png" alt="Nembo ya ruqyah" width="74" height="74"></div>
+  <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <h1>Ruqyah ya Kisharia</h1>
+  <p class="sheikh">Kwa sauti ya<br><strong>Mufti Junaid</strong></p>
+ </header>
+ <section class="player" aria-label="Kicheza sauti cha ruqyah">
+  <p class="rec-label"><span class="dot" aria-hidden="true"></span> Rekodi kamili ya sauti</p>
+  <div class="disk" aria-hidden="true"><svg viewBox="0 0 100 100" width="76" height="76"><path d="M22 34Q37 25 49 34V78Q37 70 22 78Z M78 34Q63 25 51 34V78Q63 70 78 78Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M30 44L43 41M30 53L43 50M57 41L70 44M57 50L70 53" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+  <p class="track">Ruqyah ya Kisharia</p>
+  <p class="track-sub">Takribani dakika 46 za kusikiliza</p>
+  <audio id="audio" src="ruqyah.mp3" preload="metadata" playsinline></audio>
+  <div class="timeline">
+    <input id="seek" type="range" min="0" max="1000" step="1" value="0" aria-label="Nafasi ya uchezaji">
+    <div class="times"><span id="remaining">−46:26</span><span id="elapsed">00:00</span></div>
+  </div>
+  <div class="controls">
+   <button type="button" id="repeat" class="icon-btn" aria-pressed="false" aria-label="Rudia rekodi" title="Rudia rekodi"><svg viewBox="0 0 24 24" width="23" height="23"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/></svg></button>
+   <button type="button" id="forward" class="icon-btn" aria-label="Mbele sekunde kumi" title="Mbele sekunde 10"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 8a8 8 0 1 1-5-3M18 2v6h-6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="play" class="play-btn" aria-label="Cheza"><svg id="play-icon" viewBox="0 0 24 24" width="27" height="27"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></button>
+   <button type="button" id="back" class="icon-btn" aria-label="Nyuma sekunde kumi" title="Nyuma sekunde 10"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 8a8 8 0 1 0 5-3M6 2v6h6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="speed" class="icon-btn speed" aria-label="Kasi ya uchezaji" title="Kasi ya uchezaji">1×</button>
+  </div>
+  <div id="status" class="status" role="status" aria-live="polite">Bonyeza cheza kusikiliza ruqyah</div>
+  <div class="actions">
+   <a class="action" href="ruqyah.mp3" download="ruqyah-mufti-junaid.mp3"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg> Hifadhi rekodi</a>
+   <button class="action" type="button" id="share"><svg viewBox="0 0 24 24"><path d="M12 15V3m-5 5 5-5 5 5M4 14v7h16v-7"/></svg> Shiriki ukurasa</button>
+  </div>
+ </section>
+ <section class="sheikh-text" aria-label="Maandishi yanayoambatana"><p>Sifa zote njema ni za Allah, Mola wa walimwengu wote. Rehema na amani ziwe juu ya mwisho wa manabii na mitume, bwana wetu Muhammad, familia yake na maswahaba wake wote.</p><p>Ama baada ya hayo:</p><p>Hii ni ruqyah ya kisharia inayosomwa na Mufti Junaid. Ina manufaa na imejaribiwa kwa kubatilisha uchawi, jicho baya na husuda, na ina manufaa makubwa kwa kuwafukuza mashetani na majini kutoka kwa mtu, nyumba au mahali popote ulipo.</p><p>Jinsi ya kujua kama umeathiriwa na uchawi, majini au jicho baya:</p><p>Sikiliza ruqyah hii kwa dakika kumi na tano tu wakati ukiwa mchangamfu. Angalia kama unahisi dalili hizi na kama zinajitokeza.</p><p>Ikiwa jibu ni ndiyo, umeathiriwa na unapaswa kujitibu kwa ruqyah hii. Ikiwa hakuna dalili inayojitokeza, maana yake ugonjwa wako ni wa kitabibu, si wa kiroho.</p><p>Dalili ni hizi:</p><p>Uzito mabegani, kuvimba kichwa, kupiga miayo mara kwa mara, kusinzia na kulala ghafla, kutaka kutapika, kuongezeka kwa maumivu mahali panapouma, kuhara, kubeua, kuchukia kusikiliza ruqyah, kutaka kupiga kelele au kukimbia kusikiliza ruqyah.</p><p>Ikiwa dalili moja au zaidi zinajitokeza, unapaswa kujitibu kwa ruqyah hii ya kisharia.</p><p>Namna ya kuitumia:</p><p>1. Tia udhu na ukae wakati ukiwa mchangamfu.</p><p>2. Sikiliza ruqyah hii mara mbili ndani ya saa ishirini na nne.</p><p>3. Sikiliza kwa makini, si kwa kughafilika.</p><p>4. Usisikilize ukiwa unafanya kazi nyingine.</p><p>5. Kuwa na subira na ustahimilivu unaposikiliza.</p><p>6. Madhara yoyote unayohisi kwa hakika yanatokana na mashetani; hivyo usikatishe kisomo.</p><p>7. Kumbuka kwamba ushindi unahitaji subira.</p><p>8. Kuwa na yakini kwamba Allah Mtukufu pekee ndiye Mponyaji.</p><p>9. Kuendelea na matibabu ndiyo matibabu yenyewe.</p><p>10. Mtibu mgonjwa kwa sala ya haja, dua na sadaka.</p></section>
+ <footer><span>Kusikiliza bila malipo</span><span class="sep" aria-hidden="true">•</span><span>Allah awajaalie wote uponyaji na afya njema</span></footer>
+</main>
+<script src="script-sw.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+

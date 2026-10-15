@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14392f">
+<meta name="description" content="رقیه شرعی را با صدای مفتی جنید بشنوید. شنیدن رایگان و مستقیم.">
+<meta property="og:title" content="رقیه شرعی | مفتی جنید">
+<meta property="og:description" content="رقیه شرعی را با صدای مفتی جنید بشنوید.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<title>رقیه شرعی | مفتی جنید</title>
+</head>
+<body>
+<div class="skyline" aria-hidden="true"></div>
+<main class="container">
+ <header class="masthead"><nav class="languages" aria-label="Language"><a href="index.html" lang="ar" dir="rtl">العربية</a><a href="ur.html" lang="ur" dir="rtl">اردو</a><a href="en.html" lang="en" dir="ltr">English</a><a href="hi.html" lang="hi" dir="ltr">हिन्दी</a><a href="sd.html" lang="sd" dir="rtl">سنڌي</a><a href="id.html" lang="id" dir="ltr">Bahasa Indonesia</a><a href="tr.html" lang="tr" dir="ltr">Türkçe</a><a href="bn.html" lang="bn" dir="ltr">বাংলা</a><a href="fa.html" lang="fa" dir="rtl">فارسی</a><a href="ms.html" lang="ms" dir="ltr">Bahasa Melayu</a><a href="fr.html" lang="fr" dir="ltr">Français</a><a href="sw.html" lang="sw" dir="ltr">Kiswahili</a><a href="ha.html" lang="ha" dir="ltr">Hausa</a></nav>
+  <div class="seal"><img src="icon-192.png" alt="نشان رقیه" width="74" height="74"></div>
+  <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <h1>رقیه شرعی</h1>
+  <p class="sheikh">با صدای<br><strong>مفتی جنید</strong></p>
+ </header>
+ <section class="player" aria-label="پخش‌کننده صوتی رقیه">
+  <p class="rec-label"><span class="dot" aria-hidden="true"></span> فایل صوتی کامل</p>
+  <div class="disk" aria-hidden="true"><svg viewBox="0 0 100 100" width="76" height="76"><path d="M22 34Q37 25 49 34V78Q37 70 22 78Z M78 34Q63 25 51 34V78Q63 70 78 78Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M30 44L43 41M30 53L43 50M57 41L70 44M57 50L70 53" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+  <p class="track">رقیه شرعی</p>
+  <p class="track-sub">حدود ۴۶ دقیقه شنیدن</p>
+  <audio id="audio" src="ruqyah.mp3" preload="metadata" playsinline></audio>
+  <div class="timeline">
+    <input id="seek" type="range" min="0" max="1000" step="1" value="0" aria-label="موقعیت پخش">
+    <div class="times"><span id="remaining">−46:26</span><span id="elapsed">00:00</span></div>
+  </div>
+  <div class="controls">
+   <button type="button" id="repeat" class="icon-btn" aria-pressed="false" aria-label="تکرار فایل صوتی" title="تکرار فایل صوتی"><svg viewBox="0 0 24 24" width="23" height="23"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/></svg></button>
+   <button type="button" id="forward" class="icon-btn" aria-label="ده ثانیه جلو" title="۱۰ ثانیه جلو"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 8a8 8 0 1 1-5-3M18 2v6h-6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="play" class="play-btn" aria-label="پخش"><svg id="play-icon" viewBox="0 0 24 24" width="27" height="27"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></button>
+   <button type="button" id="back" class="icon-btn" aria-label="ده ثانیه عقب" title="۱۰ ثانیه عقب"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 8a8 8 0 1 0 5-3M6 2v6h6"/><text x="12" y="17" text-anchor="middle" font-size="7" stroke="none" fill="currentColor">10</text></svg></button>
+   <button type="button" id="speed" class="icon-btn speed" aria-label="سرعت پخش" title="سرعت پخش">1×</button>
+  </div>
+  <div id="status" class="status" role="status" aria-live="polite">برای شنیدن رقیه دکمه پخش را بزنید</div>
+  <div class="actions">
+   <a class="action" href="ruqyah.mp3" download="ruqyah-mufti-junaid.mp3"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg> ذخیره فایل صوتی</a>
+   <button class="action" type="button" id="share"><svg viewBox="0 0 24 24"><path d="M12 15V3m-5 5 5-5 5 5M4 14v7h16v-7"/></svg> اشتراک‌گذاری صفحه</button>
+  </div>
+ </section>
+ <section class="sheikh-text" aria-label="متن همراه"><p>ستایش از آنِ الله، پروردگار جهانیان است. درود و سلام بر آخرین پیامبر و فرستاده، سرور ما محمد، و بر خاندان و همه یارانش باد.</p><p>اما بعد:</p><p>این رقیه شرعی با صدای مفتی جنید است. برای باطل کردن سحر، چشم‌زخم و حسد مفید و آزموده است و برای دور کردن شیاطین و جن‌ها از شخص، خانه یا هر جایی که در آن هستید بسیار مفید است.</p><p>روش شناخت اینکه آیا گرفتار سحر، آزار جن یا چشم‌زخم هستید:</p><p>این رقیه شرعی را فقط پانزده دقیقه در زمانی که سرحال هستید گوش دهید و ببینید آیا این نشانه‌ها را احساس می‌کنید و آیا در شما ظاهر می‌شوند؟</p><p>اگر پاسخ مثبت باشد، گرفتار هستید و باید با این رقیه شرعی خود را درمان کنید. اگر هیچ نشانه‌ای ظاهر نشود، معنایش این است که بیماری شما پزشکی است، نه روحی.</p><p>نشانه‌ها عبارت‌اند از:</p><p>سنگینی بر شانه‌ها، ورم سر، خمیازه مکرر، خواب‌آلودگی همراه با خواب ناگهانی، میل به استفراغ، افزایش درد در محل درد، اسهال، آروغ، بیزاری از شنیدن رقیه، میل به فریاد زدن یا فرار از شنیدن رقیه.</p><p>اگر یک یا چند نشانه از این نشانه‌ها در شما ظاهر شود، باید با این رقیه شرعی خود را درمان کنید.</p><p>روش استفاده:</p><p>۱. وضو بگیرید و زمانی بنشینید که سرحال هستید.</p><p>۲. این رقیه شرعی را در بیست‌وچهار ساعت دو بار گوش دهید.</p><p>۳. با توجه گوش دهید، نه با غفلت.</p><p>۴. هنگامی که سرگرم کار دیگری هستید گوش ندهید.</p><p>۵. هنگام گوش دادن شکیبا و استوار باشید.</p><p>۶. هر آزاری که احساس می‌کنید در حقیقت از شیاطین است؛ پس تلاوت را قطع نکنید.</p><p>۷. به یاد داشته باشید که پیروزی نیازمند شکیبایی است.</p><p>۸. یقین داشته باشید که تنها الله عزوجل شفادهنده است.</p><p>۹. ادامه دادن درمان، خودِ درمان است.</p><p>۱۰. بیمار را با نماز حاجت، دعا و صدقه درمان کنید.</p></section>
+ <footer><span>شنیدن رایگان</span><span class="sep" aria-hidden="true">•</span><span>الله به همگان شفا و عافیت عطا کند</span></footer>
+</main>
+<script src="script-fa.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
