@@ -33,7 +33,7 @@ seek.addEventListener('change', () => { if(Number.isFinite(audio.duration)) audi
 repeat.addEventListener('click', () => {audio.loop=!audio.loop;repeat.setAttribute('aria-pressed',String(audio.loop));repeat.title=audio.loop?'التكرار مفعّل':'التكرار متوقف';});
 speed.addEventListener('click', () => {speedIndex=(speedIndex+1)%speeds.length;audio.playbackRate=speeds[speedIndex];speed.textContent=speeds[speedIndex]+'×';});
 document.getElementById('share').addEventListener('click', async () => {
- const data={title:document.title,text:'الرقية الشرعية بصوت الشيخ محمد عبدالرحمن البلوشي',url:location.href};
+ const data={title:document.title,text:'الرقية الشرعية بصوت المفتي جنيد',url:location.href};
  try {if(navigator.share) await navigator.share(data); else if(navigator.clipboard && location.protocol==='https:'){await navigator.clipboard.writeText(location.href);status.textContent='تم نسخ رابط الصفحة';} else {status.textContent='انسخ الرابط من شريط عنوان المتصفح';}}catch(e){if(e.name!=='AbortError')status.textContent='يمكنك نسخ الرابط من شريط عنوان المتصفح';}
 });
 audio.addEventListener('timeupdate',update);
@@ -44,10 +44,11 @@ audio.addEventListener('ended',update);
 audio.addEventListener('error',update);
 if('serviceWorker' in navigator && (location.protocol==='https:' || location.hostname==='localhost')) navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
 if('mediaSession' in navigator) {
- navigator.mediaSession.metadata = new MediaMetadata({title:'الرقية الشرعية',artist:'الشيخ محمد عبدالرحمن البلوشي',artwork:[{src:'icon-512.png',sizes:'512x512',type:'image/png'}]});
+ navigator.mediaSession.metadata = new MediaMetadata({title:'الرقية الشرعية',artist:'المفتي جنيد',artwork:[{src:'icon-512.png',sizes:'512x512',type:'image/png'}]});
  for(const [action,fn] of [['play',()=>audio.play()],['pause',()=>audio.pause()],['seekbackward',()=>audio.currentTime=Math.max(0,audio.currentTime-10)],['seekforward',()=>audio.currentTime=Math.min(audio.duration,audio.currentTime+10)]])try{navigator.mediaSession.setActionHandler(action,fn);}catch(e){}
 }
 update();
+
 
 
 
